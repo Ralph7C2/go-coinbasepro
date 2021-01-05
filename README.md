@@ -169,7 +169,7 @@ Listen for websocket messages
     println(err.Error())
   }
 
-  for true {
+  for {
     message := coinbasepro.Message{}
     if err := wsConn.ReadJSON(&message); err != nil {
       println(err.Error())
